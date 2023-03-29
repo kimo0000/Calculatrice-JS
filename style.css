@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculatrice {
+    width: 300px;
+    height: 450px;
+    background-color: #444;
+    margin: 100px auto;
+    padding: 10px;
+    display: grid;
+    grid-template: 29% 69% / auto;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+form input[type="text"] {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #fff;
+    padding: 15px;
+    font-size: 35px;
+}
+
+.buttons {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(auto-fit, minmax(60px, 1fr));
+    gap: 10px;
+    color: #fff;
+}
+
+.buttons .btn_yellow {
+    background-color: goldenrod;
+    color: #fff;
+}
+
+.buttons button {
+    font-size: 35px;
+    border-radius: 8px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.buttons .equal {
+    background-color: green;
+    color: #fff;
+}
+
+.buttons .clear {
+    background-color: #f50;
+    color: #fff;
+}
+
+.buttons .delete {
+    font-size: 28px;
+}
